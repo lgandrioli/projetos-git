@@ -27,13 +27,28 @@
             <h2 class="mb-4 mt-1 title-tdl">Tarefas</h2>
         <div>
             <div class="row">
-                    <div class="col-10">
-                        <input type="text" placeholder="descreva sua tarefa" id="task-description"> 
-                      </div>
-                    <div class="col-2">
-                      <!---->
-                        <button id="add-task" class="btn btn-primary" type="button">Criar tarefa+</button>       
-                    </div>
+              <div class="col-5">
+                <input id="task-title"
+                       type="text" 
+                       placeholder="Título da sua tarefa"
+                       class="form-control">
+            </div>
+
+            <div class="col-5">
+                <input id="task-description"
+                       type="text" 
+                       placeholder="Descrição"
+                       class="form-control">
+            </div>
+
+            <!-- Botão adicionar tarefa -->
+            <div class="col-2">
+                
+                <!-- Botão sem tipo mas presente dentro de um <form> assume o comportamento padrão de submit -->
+                <!-- <button id="add-task" class="btn btn-primary">Criar tarefa</button> -->
+
+                <button id="add-task" class="btn btn-primary" type="button">Criar tarefa</button>
+            </div>
                 </div>
      </div>
             <div>
@@ -41,24 +56,13 @@
                     <thead>
                       <tr >
                         <th scope="col">#</thscope>
-                        <th scope ="col">titulo</th>
+                        <th scope="col">titulo</th>
                         <th scope="col">descrição</th>
                         <th scope="col">data</th>
+                        <th scope="col">delete</th>
                       </tr>
                     </thead>
-                    <tbody>
-                      <tr>
-                        <td>1</td>
-                        <td>Comprar Livro</td>
-                        <td>Ver nas Amazon sobre os autores xxxx e comparar os preços dos livros de JS</td>
-                        <td>12/05/2021 19:30</td>
-                      </tr> 
-                      <tr>
-                        <td>2<t/h>
-                        <td>fazer a todo list</td>
-                        <td>conseguir adicionar nova tarefa na todo list</td>
-                        <td>17/05/2021 9:30</td>
-                      </tr>
+                    <tbody> 
                     </tbody>
                   </table>
       </main>
